@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>Scoreboard</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+  <!--custom external css link-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- scoreboard -->
+  <div class="scoreboard">
+    <h1 class="heading">Scoreboard</h1>
+    <!--score container-->
+    <div class="score-container">
+      <div class="team">
+        <span class="name A">Team A :</span>
+        <span id="t1score">0</span>
+      </div>
+      <span id="versus">VS</span>
+      <div class="team">
+        <span class="name B">Team B :</span>
+        <span id="t2score">0</span>
+      </div>
+    </div>
+    <!--buttons container-->
+    <div class="btn-container">
+      <button class="button" type="button" id="btn1">Team A</button>
+      <button class="button" type="button" id="btn2">Team B</button>
+      <button class="button" type="button" id="rst-btn">Reset</button>
+    </div>
+  </div>
+
+  <!--External javascript link-->
+  <script src="script.js"></script>
+</body>
+
+</html>

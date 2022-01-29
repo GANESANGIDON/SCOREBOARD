@@ -1,0 +1,194 @@
+/* scoreboard */
+
+* {
+  /* to reset default browser properties */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, Sans-Serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("grass bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* scoreboard container*/
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 25px;
+  background: #1e1e1ed5;
+  border-radius: 2rem;
+  animation-name: size;
+  animation-delay: 0s;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  -webkit-animation-name: size;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-timing-function: linear;
+}
+
+/* scale animation */
+@keyframes size {
+  0% {
+    transform: scalex(0);
+  }
+
+  100% {
+    transform: scalex(1);
+  }
+}
+
+/* heading */
+.heading {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* score container */
+.score-container {
+  font-weight: 540;
+  font-size: 1.1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* team division */
+.team {
+  display: inline-block;
+}
+
+/* teamA text */
+span.A {
+  color: yellow;
+}
+
+/* teamB text */
+span.B {
+  color: pink;
+}
+
+/* score */
+#t1score,
+#t2score {
+  background-color: mintcream;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-weight: 520;
+  color: black;
+}
+
+/* span (vs) */
+#versus {
+  margin: 0px 5px;
+}
+
+/* buttons container */
+.btn-container {
+  width: 100%;
+  text-align: center;
+}
+
+/* buttons */
+.button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: white;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 5px gray;
+}
+
+.button:active {
+  filter: brightness(0.8);
+}
+
+/* teamA teamB buttons */
+#btn1,
+#btn2 {
+  background-color: #007BF4;
+}
+
+/* reset button */
+#rst-btn {
+  background-color: crimson;
+}
+
+
+/* for large mobile devices */
+@media(min-width: 481px){
+
+  .scoreboard {
+    gap: 25px;
+    padding: 30px 40px;
+  }
+
+  .heading {
+    font-size: 2.1rem;
+  }
+  
+  .score-container {
+    font-weight: 550;
+    font-size: 1.4rem;
+  }
+
+  .button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    margin: 5px 5px;
+    cursor: pointer;
+  }
+
+}
+
+
+/* for large devices */
+@media(min-width: 769px) {
+
+  .scoreboard {
+    padding: 50px 60px;
+    gap: 40px;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .score-container {
+    font-size: 2rem;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .button {
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+
+}
